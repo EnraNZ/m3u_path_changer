@@ -16,6 +16,7 @@ Preperations:
 Usage:
 - In Line 84, edit $_ -replace 'old_Path', 'new_Path'  -- with your current path and the new one
 Examples:
+
   $_ -replace '\/\/192.168.128.128\/Audio', '../..'
   $_ -replace 'Z:\Audio', '../../42'
 - place your .m3u files in the "m3u-files" folder
