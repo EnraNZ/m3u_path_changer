@@ -14,7 +14,7 @@ Preperations:
 - verify that your .m3u playlists also contain #EXTINF data. This Script changes only ODD linenumbers. starting with line 3. See example.m3u with details
 
 Usage:
-- In Line 84, edit $_ -replace 'old_Path', 'new_Path'  -- with your current path and the new one
+- In Line 98, edit $_ -replace 'old_Path', 'new_Path'  -- with your current path and the new one
 Examples:
 
   $_ -replace '\/\/192.168.128.128\/Audio', '../..'
