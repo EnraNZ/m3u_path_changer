@@ -18,7 +18,9 @@ Usage:
 Examples:
 
   $_ -replace '\/\/192.168.128.128\/Audio', '../..'
+  
   $_ -replace 'Z:\Audio', '../../42'
+  
 - place your .m3u files in the "m3u-files" folder
 - run the script
 
