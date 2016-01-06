@@ -82,7 +82,7 @@ ForEach ($playlist in $playlists)
 			if ($li -eq $lineNo_leadingZeros)
 			{
 				Write-Progress -Id 1 -activity "$_" -status "Line $li of $totalLines" -PercentComplete (($l / $totalLines) * 100)
-				$_ -replace '\/\/192.168.128.99\/Audio', '../..'
+				$_ -replace 'old_Path', 'new_Path'
 				Start-Sleep -m 42
 			}
 			else
