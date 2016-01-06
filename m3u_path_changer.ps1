@@ -10,7 +10,19 @@
 	.DESCRIPTION
 		A small PowerShell script for changing the path in .m3u playlists
 	.License
-		Licensed under Apache License 2.0. See license file for details.
+		Copyright 2016 Arne Lünsmann
+
+	   	Licensed under the Apache License, Version 2.0 (the "License");
+	   	you may not use this file except in compliance with the License.
+	   	You may obtain a copy of the License at
+
+	       http://www.apache.org/licenses/LICENSE-2.0
+
+	   	Unless required by applicable law or agreed to in writing, software
+	   	distributed under the License is distributed on an "AS IS" BASIS,
+	   	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	   	See the License for the specific language governing permissions and
+	   	limitations under the License.
 #>
 
 function Get-ScriptDirectory
@@ -27,6 +39,7 @@ function Get-ScriptDirectory
 	}
 }
 [string]$global:ScriptDirectory = Get-ScriptDirectory
+#Write-Host $ScriptDirectory
 
 Function custom-pause
 {
@@ -82,7 +95,7 @@ ForEach ($playlist in $playlists)
 			if ($li -eq $lineNo_leadingZeros)
 			{
 				Write-Progress -Id 1 -activity "$_" -status "Line $li of $totalLines" -PercentComplete (($l / $totalLines) * 100)
-				$_ -replace 'old_Path', 'new_Path'
+				$_ -replace '\/\/192.168.128.99\/Audio', '../..'
 				Start-Sleep -m 42
 			}
 			else
