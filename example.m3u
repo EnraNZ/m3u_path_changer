@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:219, Artist000 - Song000
+//192.168.128.128/Audio/001_Music/Folk/Song000.mp3
+#EXTINF:419, Artist000 - Song001
+//192.168.128.128/Audio/001_Music/Folk/Song001.mp3
+#EXTINF:162, Artist001 - Song000
+//192.168.128.128/Audio/001_Music/Metal/Song000.mp3
