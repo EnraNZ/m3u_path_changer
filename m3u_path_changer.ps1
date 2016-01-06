@@ -10,7 +10,7 @@
 	.DESCRIPTION
 		A small PowerShell script for changing the path in .m3u playlists
 	.License
-		Licensed under Apache License 2.0. See license file for deatails.
+		Licensed under Apache License 2.0. See license file for details.
 #>
 
 function Get-ScriptDirectory
